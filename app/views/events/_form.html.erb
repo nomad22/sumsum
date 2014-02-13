@@ -14,7 +14,7 @@
   <div class="field">
     Date: <%= f.text_field :date %></br>
     Friends: <%= f.fields_for :friends do |friends_fields| %>
-      <%= friends_fields.text_field :event #not sure if this is right%> 
+      <%= friends_fields.text_field :name %> 
       <% end %>
       
   </div>

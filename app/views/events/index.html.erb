@@ -16,8 +16,8 @@
     <% @events.each do |event| %>
       <tr>
         <td><%= event.date %></td>
-        <td><%= event.friends.each do |friend| %>
-          <%= friend.name %>
+        <% event.friends.each do |friend| %>
+          <td><%= friend.name %></td>
           <% end %>
         </td>
         <td><%= link_to 'Show', event %></td>
